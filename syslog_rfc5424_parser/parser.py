@@ -22,7 +22,7 @@ GRAMMAR = r'''
     ?param_name      : sd_name
     ?sd_name         : /[^= \]\"]{1,32}/
     appname          : NILVALUE
-                     | /[!-~]{1,48}/
+                     | /[!-~]+/
     procid           : NILVALUE
                      | /[!-~]{1,128}/
     msgid            : NILVALUE

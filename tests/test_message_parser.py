@@ -91,6 +91,11 @@ PARSE_VECTORS = (
                 }
             }
         )
+    ),
+    (
+        '<85>1 2017-03-02T13:21:15.733598-08:00 vrs-1 Microsoft-Windows-ServerManager-ManagementProvider 20481 - -  msg',
+        Expected(SyslogSeverity.notice, SyslogFacility.authpriv, 1, '2017-03-02T13:21:15.733598-08:00', 'vrs-1',
+                 'Microsoft-Windows-ServerManager-ManagementProvider', 20481, None, ' msg', {})
     )
 
 )
